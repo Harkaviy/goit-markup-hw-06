@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -56,6 +57,81 @@
             </li>
           </ul>
         </address>
+        <div class="menu-button-container">
+          <button type="button" class="menu-header-open mobile-open-menu">
+            <svg class="advantages-section-icons" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mob-menu mobile-menu-container is-hidden">
+        <button type="button" class="mob-close-btn mobile-close-menu">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <ul class="menu-mob-list list">
+          <li class="mob-item">
+            <a class="mob-list-link active link current" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-item">
+            <a class="mob-list-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-list-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div class="social-wrapper">
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-list list">
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href="">
+                <svg class="mob-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href="">
+                <svg class="mob-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href="">
+                <svg class="mob-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href="">
+                <svg class="mob-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -128,6 +204,7 @@
           <ul class="features-item-list list">
             <li class="features-list-item">
               <img
+                srcset="./images/computer.jpg 1x, ./images/computer-x2.jpg 2x"
                 src="./images/computer.jpg"
                 alt="Computer"
                 width="360"
@@ -136,6 +213,10 @@
             </li>
             <li class="features-list-item">
               <img
+                srcset="
+                  ./images/phone-screen.jpg    1x,
+                  ./images/phone-screen-x2.jpg 2x
+                "
                 src="./images/phone-screen.jpg"
                 alt="Phone screen"
                 width="360"
@@ -144,6 +225,7 @@
             </li>
             <li class="features-list-item">
               <img
+                srcset="./images/phone.jpg 1x, ./images/phone-x2.jpg 2x"
                 src="./images/phone.jpg"
                 alt="Phone"
                 width="360"
@@ -159,6 +241,8 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                class="team-item-img"
+                srcset="./images/mark.jpg 1x, ./images/mark-x2.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -201,6 +285,8 @@
             </li>
             <li class="team-list-item">
               <img
+                class="team-item-img"
+                srcset="./images/tom.jpg 1x, ./images/tom-x2.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -243,6 +329,8 @@
             </li>
             <li class="team-list-item">
               <img
+                class="team-item-img"
+                srcset="./images/camila.jpg 1x, ./images/camila-x2.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -285,6 +373,8 @@
             </li>
             <li class="team-list-item">
               <img
+                class="team-item-img"
+                srcset="./images/daniel.jpg 1x, ./images/daniel-x2.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -528,5 +618,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

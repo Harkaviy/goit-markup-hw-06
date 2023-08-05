@@ -1,0 +1,364 @@
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 428px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+        .header-menu-list,
+        .header-address {
+            display: none;
+        }
+        
+        /* HERO SECTION */
+
+        .hero-title {
+        font-size: 36px;
+        line-height: 1.11;
+        max-width: 320px;
+        text-transform: capitalize;
+        }
+
+        /* ADVANTAGES SECTION */
+    
+        .advantages-section-list {
+        flex-direction: column;
+        gap: 72px;
+        }
+
+        .advantages-item {
+        width: 100%;
+        }
+        
+        .advantages-title {
+        text-align: center;
+        }
+
+        /* TEAM SECTION */
+        
+        .team-section {
+        height: 100%;
+        }
+
+        .team-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+        }
+
+        .team-list-item {
+        width: 264px;
+        }
+
+        /* CUSTOMERS SECTION */
+
+        .customers-section-list {
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 16px;
+        }
+
+        .customers-section-item {
+        width: calc((100% - 16px) /2);
+        }
+
+        /* FOOTER  */
+
+        .container-footer {
+        flex-direction: column;
+        row-gap: 72px;
+        align-items: center;
+        }
+        
+        .link-footer {
+        display: block;
+        text-align: center;
+        }
+        
+        .social-icon-title {
+        text-align: center;
+        }
+        
+        .footer-subscribe-container {
+        display: block;
+        width: 100%;
+        }
+        
+        .container-input-button {
+        flex-direction: column;
+        }
+        
+        .subscribe-title {
+        text-align: center;
+        }
+        
+        .input-subscribe {
+        width: 100%;
+        }
+        
+        .footer-button-submit {
+        width: max-content;
+        align-self: center;
+        }
+        
+        .container-input-button {
+        gap: 16px;
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1158px) {
+       .container-svg {
+        display: none;
+        }
+
+        .features-section {
+        display: none;
+        }
+
+        .advantages-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+                }
+
+        .advantages-description {
+        font-weight: 500;
+        align-self: stretch;
+        }
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+      max-width: 768px;
+    }
+
+    .header-logo {
+    margin-right: 120px;
+    }
+
+    .modal {
+    width: 408px;
+    }
+
+    .current {
+    position: relative;
+    color: var(--active-link-color);
+        }
+    
+    .current::after {
+     content: "";
+     position: absolute;
+     bottom: -1px;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     border-radius: 2px;
+     background: var(--active-link-color);
+        }
+
+    .menu-button-container {
+    display: none;
+         }
+    
+    .mob-menu {
+    display: none;
+    }
+    
+    .header-menu-list,
+    .header-address {
+    display: flex;
+    gap: 40px;
+    }
+
+
+    /* HEADER ADDRESS */
+
+    .address-list {
+     flex-direction: column;
+     gap: 12px;
+    }
+
+    .address-contact {
+     font-size: 12px;   
+    }
+
+    /* ADVANTAGES SECTION */
+
+    .advantages-title {
+    text-align: start;
+    }
+
+    
+    .advantages-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    }
+    
+    .advantages-item {
+    width: calc((100% - 24px) / 2);
+    }
+
+
+    /* TEAM SECTION */
+    
+    .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    }
+    
+    .team-list-item {
+    width: calc((100% - 24px) / 2);
+    width: 264px;
+    }
+
+    /* CUSTOMERS-SECTION  */
+
+    .customers-section {
+    padding: 96px 0;
+    }
+    
+    .customers-section-list {
+    justify-content: center;
+    column-gap: 24px;
+    }
+    
+    .customers-section-item {
+    width: 168px;
+    }
+
+    /* FOOTER SECTION  */
+
+    .container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    width: 552px;
+    align-items: normal;
+    }
+
+    .link-footer {
+    text-align: start;
+    }
+
+    .social-icon-title {
+    text-align: start;
+    }
+
+    .subscribe-title {
+    text-align: start;
+    }
+    
+    .container-input-button {
+    flex-direction: row;
+    }
+
+    .input-subscribe {
+    width:264px;
+    }
+    
+    .hero-section {
+    max-width: 768px;
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet.jpg);
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero-section {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet-2x.jpg)
+            }
+        }
+    
+    .hero-title {
+    line-height: 1.07;
+    font-size: 56px;
+    max-width: 496px;
+    text-transform: none;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    
+    .container {
+     max-width: 1158px;
+    }
+
+    .header-logo {
+     margin-right: 76px;
+        }
+
+    .address-list {
+    flex-direction: row;
+    gap: 40px;  
+    }
+
+    .address-contact {
+    font-size: 16px;
+    }
+
+
+     /* ADVANTAGES SECTION */
+
+
+    .container-svg {
+    display: flex;
+    }
+    
+    .advantages-item {
+     width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .advantages-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    }
+
+    /* TEAM SECTION  */
+     
+    .team-list {
+    flex-wrap: nowrap;
+    }
+
+    .customers-section-list {
+    flex-wrap:nowrap;
+    }
+
+    .container-footer {
+    flex-wrap:nowrap;
+    width: 100%;
+    }
+
+    .container-footer-left {
+    margin-right: 120px;
+    }
+
+    .footer-subscribe-container {
+    margin-left: 80px;
+    }
+
+
+    .hero-section {      
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desktop.jpg);
+    }
+    
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desktop-x2.jpg)
+    }
+    }
+
+    
+    
+}
