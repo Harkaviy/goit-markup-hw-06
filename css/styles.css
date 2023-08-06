@@ -42,12 +42,11 @@ body {
   font-family:"Roboto", sans-serif;
   color:#434455;
   background-color:#FFFFFF;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
-  max-width:1158px;
-  padding: 0px 15px;
   margin: 0 auto;  
 }
 
@@ -125,6 +124,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 .header-menu-list {
   font-size: 16px;
@@ -242,7 +242,8 @@ body {
 
  .mob-list {
    display: flex;
-   gap: 56px;
+   justify-content: space-between;
+   max-width: 328px;
  }
 
  .mob-social-item {

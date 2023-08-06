@@ -108,7 +108,18 @@
         }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1158px) {
+@media screen and (max-width: 427px) {
+        .mob-address-tel {
+        font-size: 25px;
+        }
+
+        .modal {
+        width: 75%;
+        left: 39%;
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1157px) {
        .container-svg {
         display: none;
         }
@@ -126,6 +137,18 @@
         .advantages-description {
         font-weight: 500;
         align-self: stretch;
+        }
+
+        .team-section {
+        padding: 96px 0;
+        }
+
+        .advantages-section {
+        padding: 96px 0;
+        }
+
+        .customers-section {
+        padding: 96px 0;
         }
 }
 
@@ -196,7 +219,7 @@
     .advantages-section-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
     }
     
     .advantages-item {
@@ -209,7 +232,7 @@
     .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
     }
     
     .team-list-item {
@@ -219,9 +242,6 @@
 
     /* CUSTOMERS-SECTION  */
 
-    .customers-section {
-    padding: 96px 0;
-    }
     
     .customers-section-list {
     justify-content: center;
@@ -284,10 +304,13 @@
 
 }
 
+
+
 @media screen and (min-width: 1158px) {
     
     .container {
      max-width: 1158px;
+     padding: 0px 15px;
     }
 
     .header-logo {
@@ -317,7 +340,6 @@
 
     .advantages-title {
     font-size: 20px;
-    font-weight: 500;
     line-height: 1.2;
     }
 
@@ -334,6 +356,7 @@
     .container-footer {
     flex-wrap:nowrap;
     width: 100%;
+    gap: unset;
     }
 
     .container-footer-left {
